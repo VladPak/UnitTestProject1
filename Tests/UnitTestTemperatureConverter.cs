@@ -9,6 +9,7 @@ namespace Tests
         [TestMethod]
         public void TestMethod1()
         {
+            //Test for getting right result
             double tempCelc = 22;
             double tempFahrenActual;
             double tempFahrenExpected = 71.6;
