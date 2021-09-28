@@ -10,9 +10,9 @@ namespace Tests
         public void TestMethod1()
         {
             //Test for getting right result
-            double tempCelc = 22;
+            double tempCelc = 20;
             double tempFahrenActual;
-            double tempFahrenExpected = 71.6;
+            double tempFahrenExpected = 68;
 
             tempFahrenActual = Temperature.CelciusToFahrenheit(tempCelc);
 

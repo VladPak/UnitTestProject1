@@ -1,0 +1,28 @@
+﻿@page
+@model FahrenheitTest.Pages.CalculateAgeModel
+@{
+}
+
+
+<div>
+    <h3>Age Calculator</h3>
+    </br>
+    <form name="AgeCalculatorForm" id="AgeCalculatorForm" method="post">
+        Desired date [Format: mm/dd/yyyy]:
+        <br />
+        <input name="CurrentDate" type="datetime" class="form-control input-lg" placeholder="01/01/1991" autofocus required value="@Model.currentDate.ToString("dd/mm/yyyy")" />
+        </br>
+
+        Birth date [Format: mm/dd/yyyy]:
+        <br />
+        <input name="MyBirthDate" type="datetime" class="form-control input-lg" placeholder="01/01/1991" autofocus required value="@Model.myBirthDate.ToString("dd/mm/yyyy")" />
+        </br>
+
+        Your Age:
+        <br />
+        <input name="Age" type="number" class="form-control input-lg" autofocus required readonly value="@Model.age" />
+        </br>
+
+        <input id="CalculateButton" type="submit" value="Calculate My Age" class="btn btn-info" />
+    </form>
+</div>
