@@ -1,0 +1,23 @@
+﻿@page
+@model FahrenheitTest.Pages.TemperatureModel
+@{
+}
+
+
+<div>
+    <h1>Temperature Converter</h1>
+
+    <form name="TemperatureForm" id="TemperatureForm" method="post">
+        Temperature [Celcius]:
+        <br />
+        <input name="TemperatureCelcius" type="number" class="form-control input-lg" autofocus required value="@Model.tempCelcius" />
+        </br>
+
+        Temperature [Fahrenheit]:
+        <br />
+        <input name="TemperatureFahrenheit" type="number" class="form-control input-lg" autofocus required readonly value="@Model.tempFahrenheit" />
+        </br>
+
+        <input id="ConvertButton" type="submit" value="Convert" class="btn btn-info"/>
+    </form>
+</div>
